@@ -1,0 +1,183 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Form</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f0f0f0;
+
+            margin: 0;
+
+            padding: 20px;
+
+        }
+
+        .container {
+
+            background-color: #fff;
+
+            padding: 20px;
+
+            border-radius: 5px;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            max-width: 300px;
+
+            margin: auto;
+
+        }
+
+        h2 {
+
+            text-align: center;
+
+        }
+
+        .form-group {
+
+            margin-bottom: 15px;
+
+        }
+
+        .form-group label {
+
+            display: block;
+
+            margin-bottom: 5px;
+
+        }
+
+        .form-group input {
+
+            width: 100%;
+
+            padding: 8px;
+
+            box-sizing: border-box;
+
+        }
+
+        .form-group select {
+
+            width: 100%;
+
+            padding: 8px;
+
+            box-sizing: border-box;
+
+        }
+
+        button {
+
+            width: 100%;
+
+            padding: 10px;
+
+            background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+        }
+
+        button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>User Information</h2>
+
+        <div class="form-group">
+
+            <label for="firstname">First Name:</label>
+
+            <input type="text" id="firstname" name="firstname">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="lastname">Last Name:</label>
+
+            <input type="text" id="lastname" name="lastname">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="sex">Sex:</label>
+
+            <select id="sex" name="sex">
+
+                <option value="Male">Male</option>
+
+                <option value="Female">Female</option>
+
+                <option value="Other">Other</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="age">Age:</label>
+
+            <input type="number" id="age" name="age">
+
+        </div>
+
+        <button onclick="showMessage()">Submit</button>
+
+    </div>
+ 
+    <script>
+
+        function showMessage() {
+
+            var firstName = document.getElementById('firstname').value;
+
+            var lastName = document.getElementById('lastname').value;
+
+            alert('Hello ' + firstName + ' ' + lastName + '!');
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+ 
